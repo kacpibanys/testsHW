@@ -35,7 +35,7 @@ class ShoppingCartServiceTest {
 
     //1.Powinien obliczyć cenę dla jednego produktu bez rabatu
     @Test
-    void shouldCalculateOneProductsPriceWithoutDiscount(){
+    void shouldCalculateOneProductsPriceWithoutDiscount() {
         //Arrange
         CartItem koszykNaJeden = new CartItem("jd-67", 1);
 
@@ -59,7 +59,7 @@ class ShoppingCartServiceTest {
 
     //2.Powinien zastosować 10% rabatu dla klienta VIP
     @Test
-    void shouldApplyTenPercentDiscountForAVipCustomer(){
+    void shouldApplyTenPercentDiscountForAVipCustomer() {
         //Arrange
         CartItem koszykVip = new CartItem("vip-prod", 1);
 
@@ -83,7 +83,7 @@ class ShoppingCartServiceTest {
 
     //3.Powinien obliczyć cenę dla wielu produktów
     @Test
-    void shouldCalculateForMultipleProducts(){
+    void shouldCalculateForMultipleProducts() {
         //Arrange
         CartItem item1 = new CartItem("prod-A", 2);
         CartItem item2 = new CartItem("prod-B", 3);
