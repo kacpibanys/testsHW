@@ -117,7 +117,6 @@ class ShoppingCartServiceTest {
         String customerId = "dowolny-klient";
 
         //Act
-
         //Assert
         assertThrows(IllegalArgumentException.class, () -> {
             shoppingCartService.calculateTotal(customerId, emptyItems);
